@@ -102,9 +102,42 @@ and a basis for the null space.
 \end{problem}
 
 \begin{solution}
+    
+    The problems will be broken down into the basis for 
+    the \textbf{row space} ($RS(A)$), \textbf{column space} ($CS(A)$), and 
+    \textbf{null space} ($N(A)$), in that 
+    order.
 
 	\begin{enumerate}[(a)]
-		\item
+        \item Let \( A =
+            \begin{bmatrix*}[r]
+                1 & 3 & 2 \\
+                2 & 1 & 4 \\
+                4 & 7 & 8
+            \end{bmatrix*}
+            \) 
+            
+            I) $RS(A)$ can be found by
+            first reducing the matrix to row echelon form, to
+            eliminate linearly dependent rows.
+
+            The row echelon form of \(A = 
+            \begin{bmatrix*}[r]
+                1 & 3 & 2 \\
+                0 & 1 & 0 \\
+                0 & 0 & 0
+            \end{bmatrix*}
+            \).
+
+            This leaves two linearly independent rows, \((1, 3, 2),\ (0, 1, 0)\).
+            These two rows form the basis of the row space of $A$, as all other
+            rows of $A$ can be obtained through addition or scalar multiplication 
+            of these rows.
+
+            \(\therefore RS(A) = \{(1, 3, 2),(0, 1, 0)\}\)
+            
+            II) 
+        
 	\end{enumerate}
 
 \end{solution}
